@@ -19,7 +19,7 @@ tleFilePath = fullfile(currentFolder, tleFileName); % Construct full path
 [A0, satnum, semi_major_axis, eccentricity, inclination,...
     RA_of_asc_node, Arg_of_perigee, Mean_anomaly, Mean_motion] = convert_TLE(tleFilePath);
 
-disp("/*/*/*")
+disp("*show last satellite start*")
 fprintf('Satellite Number: %d\n', satnum);
 fprintf('Semi-Major Axis: %.2f km\n', semi_major_axis);
 fprintf('Eccentricity: %.4f\n', eccentricity);
@@ -28,7 +28,7 @@ fprintf('RA of Ascending Node: %.2f degrees\n', RA_of_asc_node);
 fprintf('Argument of Perigee: %.2f degrees\n', Arg_of_perigee);
 fprintf('Mean Anomaly: %.2f degrees\n', Mean_anomaly);
 fprintf('Mean Motion: %.4f rev/day\n', Mean_motion);
-disp("/*/*/*")
+disp("*show last satellite end*")
 
 % Create satellite in MATLAB
 %sat = satellite(sc, semi_major_axis, eccentricity, inclination, ...
